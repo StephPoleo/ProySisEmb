@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/ProySisEmb/Proy_Vivado/AddRoundKey_Decryption/AddRoundKey_Decryption.sim/sim_1/synth/func/xsim/AddRoundKey_Decrypt_tb_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AddRoundKey_Decrypt
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/ProySisEmb/Proy_Vivado/AddRoundKey_Decryption/AddRoundKey_Decryption.srcs/sim_1/new/AddRoundKey_Decrypt_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AddRoundKey_Decrypt_tb

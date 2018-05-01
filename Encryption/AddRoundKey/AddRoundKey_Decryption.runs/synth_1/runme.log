@@ -1,0 +1,360 @@
+
+*** Running vivado
+    with args -log AddRoundKey_Decrypt.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source AddRoundKey_Decrypt.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source AddRoundKey_Decrypt.tcl -notrace
+Command: synth_design -top AddRoundKey_Decrypt -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10244 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 360.574 ; gain = 100.465
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'AddRoundKey_Decrypt' [D:/A01207776/Parcial2/RISC_CPU_A01207776/AddRoundKey_Decryption/AddRoundKey_Decryption.srcs/sources_1/new/AddRoundKey_Decrypt.v:23]
+INFO: [Synth 8-256] done synthesizing module 'AddRoundKey_Decrypt' (1#1) [D:/A01207776/Parcial2/RISC_CPU_A01207776/AddRoundKey_Decryption/AddRoundKey_Decryption.srcs/sources_1/new/AddRoundKey_Decrypt.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 412.125 ; gain = 152.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 412.125 ; gain = 152.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 412.125 ; gain = 152.016
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+WARNING: [Synth 8-6014] Unused sequential element x_reg was removed.  [D:/A01207776/Parcial2/RISC_CPU_A01207776/AddRoundKey_Decryption/AddRoundKey_Decryption.srcs/sources_1/new/AddRoundKey_Decrypt.v:49]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 436.102 ; gain = 175.992
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register KeyMatrix_reg [D:/A01207776/Parcial2/RISC_CPU_A01207776/AddRoundKey_Decryption/AddRoundKey_Decryption.srcs/sources_1/new/AddRoundKey_Decrypt.v:47]
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	             1278 Bit    Registers := 1     
+	              128 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input   1278 Bit        Muxes := 4     
+	   2 Input    128 Bit        Muxes := 6     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register KeyMatrix_reg [D:/A01207776/Parcial2/RISC_CPU_A01207776/AddRoundKey_Decryption/AddRoundKey_Decryption.srcs/sources_1/new/AddRoundKey_Decrypt.v:47]
+Hierarchical RTL Component report 
+Module AddRoundKey_Decrypt 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	             1278 Bit    Registers := 1     
+	              128 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input   1278 Bit        Muxes := 4     
+	   2 Input    128 Bit        Muxes := 6     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element x_reg was removed.  [D:/A01207776/Parcial2/RISC_CPU_A01207776/AddRoundKey_Decryption/AddRoundKey_Decryption.srcs/sources_1/new/AddRoundKey_Decrypt.v:49]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 643.980 ; gain = 383.871
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 643.980 ; gain = 383.871
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1269]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1268]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1267]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1266]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1265]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1264]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1263]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1262]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1261]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1260]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1259]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1258]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1257]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1256]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1255]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1254]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1253]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1252]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1251]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1250]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1249]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1248]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1247]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1246]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1245]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1244]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1243]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1242]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1241]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1240]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1239]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1238]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1237]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1236]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1235]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1234]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1233]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1232]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1231]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1230]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1229]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1228]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1227]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1226]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1225]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1224]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1223]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1222]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1221]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1220]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1219]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1218]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1217]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1216]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1215]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1214]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1213]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1212]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1211]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1210]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1209]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1208]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1207]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1206]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1205]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1204]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1203]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1202]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1201]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1200]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1199]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1198]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1197]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1196]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1195]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1194]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1193]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1192]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1191]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1190]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1189]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1188]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1187]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1186]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1185]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1184]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1183]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1182]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1181]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1180]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1179]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1178]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1177]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1176]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1175]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1174]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1173]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1172]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1171]) is unused and will be removed from module AddRoundKey_Decrypt.
+WARNING: [Synth 8-3332] Sequential element (KeyMatrix_reg[1170]) is unused and will be removed from module AddRoundKey_Decrypt.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 643.980 ; gain = 383.871
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 643.980 ; gain = 383.871
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 643.980 ; gain = 383.871
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 643.980 ; gain = 383.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 643.980 ; gain = 383.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 643.980 ; gain = 383.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 643.980 ; gain = 383.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     2|
+|3     |LUT2 |    15|
+|4     |LUT3 |   267|
+|5     |LUT4 |    11|
+|6     |LUT5 |     5|
+|7     |LUT6 |   242|
+|8     |FDRE |   406|
+|9     |IBUF |   259|
+|10    |OBUF |   129|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  1337|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 643.980 ; gain = 383.871
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1152 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 643.980 ; gain = 383.871
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 643.980 ; gain = 383.871
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 259 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'AddRoundKey_Decrypt' is not ideal for floorplanning, since the cellview 'AddRoundKey_Decrypt' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+14 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 691.730 ; gain = 444.309
+INFO: [Common 17-1381] The checkpoint 'D:/A01207776/Parcial2/RISC_CPU_A01207776/AddRoundKey_Decryption/AddRoundKey_Decryption.runs/synth_1/AddRoundKey_Decrypt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file AddRoundKey_Decrypt_utilization_synth.rpt -pb AddRoundKey_Decrypt_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 691.730 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue May  1 12:38:02 2018...
