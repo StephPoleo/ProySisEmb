@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"AddRoundKey_tb_func_synth.v" \
+"../../../../../AddRoundKey.srcs/sim_1/new/AddRoundKey_tb.v" \
+
+# Do not sort compile order
+nosort

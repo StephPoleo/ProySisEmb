@@ -1,0 +1,7 @@
+Running: xsim.dir/AddRoundKey_tb_func_synth/xsimk.exe -simmode gui -wdb AddRoundKey_tb_func_synth.wdb -simrunnum 0 -socket 62450
+Design successfully loaded
+Design Loading Memory Usage: 11356 KB (Peak: 11356 KB)
+Design Loading CPU Usage: 77 ms
+Simulation completed
+Simulation Memory Usage: 12776 KB (Peak: 12776 KB)
+Simulation CPU Usage: 109 ms

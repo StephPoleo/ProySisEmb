@@ -1,5 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/ProySisEmb/Proy_Vivado/SubBytes_Decrypt/SubBytes_Decrypt.sim/sim_1/synth/func/xsim/SubBytes_Decrypt_tb_func_synth.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SubBytes_Decrypt
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/ProySisEmb/Proy_Vivado/SubBytes_Decrypt/SubBytes_Decrypt.srcs/sim_1/new/SubBytes_Decrypt_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SubBytes_Decrypt_tb

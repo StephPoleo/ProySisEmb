@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"Inv_SubBytes_tb_func_synth.v" \
+"../../../../../Inv_SubBytes.srcs/sim_1/new/Inv_SubBytes_tb.v" \
+
+# Do not sort compile order
+nosort
